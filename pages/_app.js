@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import AppContext from '../components/AppContext'
 import '../styles/globals.css'
 import { Poppins } from "@next/font/google"
 
@@ -7,10 +9,12 @@ const poppins = Poppins({
 })
 
 function MyApp({ Component, pageProps }) {
+const [nameContext, setNameContext] = useState("John")
+
   return (
-    <main className={poppins.className}>
+    <AppContext.Provider value={{ nameContext, setNameContext }} className={poppins.className}>
       <Component {...pageProps} />
-    </main>
+    </AppContext.Provider>
   )
 }
 
