@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "^13.2.4",
+    "@uiball/loaders": "^1.2.6",
     "babel-preset-es2015": "^6.24.1",
     "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
@@ -20,6 +21,7 @@
     "next-videos": "^1.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-player": "^2.12.0",
     "react-toastify": "^9.1.2",
     "style-loader": "^3.3.2",
     "url-loader": "^4.1.1"

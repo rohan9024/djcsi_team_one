@@ -18,7 +18,8 @@ import close from "../assets/close.svg"
 import search from "../assets/search.svg"
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-
+// import starterVideo from "../assets/starterVideo.mp4"
+import ReactPlayer from 'react-player'
 
 const poppins = Poppins({
     subsets: ['latin'],
@@ -32,12 +33,21 @@ function menu() {
     return (
         <div className={`${poppins.className} && 'text-black bg-[#E2C2AA] h-full w-screen  '`}>
 
-            {/* <video src={starterVideo} /> */}
+            {/* <video autoPlay style={{ width: '500px', height: '500px' }}>
+                <source src={starterVideo} />
+            </video> */}
 
             {/* <video autoplay>
                 <source src="../assets/starterVideo.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video> */}
+
+            {/* <video autoPlay loop style={{ width: '500px', height: '500px' }}>
+                <source src={starterVideo} />
+            </video> */}
+
+            {/* <ReactPlayer src='../assets/starterVideo.mp4' /> */}
+
 
 
             {/* Header */}
@@ -48,7 +58,8 @@ function menu() {
                     height={120}
                     cover
                     className=''
-                />      <Image
+                />
+                <Image
                     src={more}
                     width={20}
                     height={20}

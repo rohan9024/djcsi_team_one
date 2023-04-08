@@ -70,10 +70,12 @@ function third() {
                         onClick={() => setMore(false)}
                     />
                 </div>
+             
+
 
                 <div className='flex flex-col justify-center items-center text-xl space-y-12'>
                     <h1 onClick={() => router.push('menu')}>View Menu </h1>
-                    <h1>Explore Offers </h1>
+                    <h1 onClick={() => router.push('offers')}>Explore Offers </h1>
                     <h1>My Points</h1>
                     <h1>Contact Us </h1>
                     <h1>Know More About Us </h1>
@@ -82,7 +84,6 @@ function third() {
             :
             (<div className={`${poppins.className} && 'text-black bg-[#E2C2AA] h-full min-h-screen w-screen -ml-12'`}>
 
-                {/* <video src={starterVideo} /> */}
 
                 {/* <video autoplay>
                 <source src="../assets/starterVideo.mp4" type="video/mp4" />
@@ -110,7 +111,7 @@ function third() {
                         onClick={() => setMore(true)}
                     />
                 </div>
-   
+
                 <h1 className='text-2xl  text-center mt-10'>Smooth Out Your Everyday</h1>
                 <div className='flex justify-center items-center mt-10 overflow-x-scroll mx-auto gap-8 '>
                     <Image
@@ -195,7 +196,6 @@ function third() {
                 </div>
 
                 {
-
                     trending && (
                         <div className='grid grid-cols-2 gap-8 ml-10 mr-10 pb-10 mt-10'>
                             <div className='flex flex-col justify-center items-center relative'>
@@ -240,7 +240,6 @@ function third() {
                     )
                 }
                 {
-
                     combos && (
                         <div className='grid grid-cols-2 gap-8 ml-10 mr-10 pb-10 mt-10'>
                             <div className='flex flex-col justify-center items-center relative'>

@@ -17,7 +17,7 @@ const poppins = Poppins({
 function second() {
     const router = useRouter()
 
-    
+
     return (
         <div className={`${poppins.className} && 'text-black bg-[#E2C2AA] h-screen w-screen -ml-12'`}>
 
@@ -37,15 +37,17 @@ function second() {
                     height={120}
                     cover
                     className=''
-                />      <Image
+                />
+                <Image
                     src={more}
                     width={20}
                     height={20}
                     contain
                     className=''
-                />        </div>
+                />
+            </div>
 
-            <h1 className='font-medium rounded-full text-black p-3 bg-white w-56 mx-auto shadow-2xl'>Welcome to ETTARRA😎</h1>
+            <h1 className='font-medium rounded-full text-black p-3 bg-white w-56 mx-auto shadow-2xl'> ETTARRAKE SWAGATA😎</h1>
             <div className='flex flex-col justify-center items-center'>
                 <Image
                     src={anna}
@@ -54,8 +56,7 @@ function second() {
                     cover
                     className=''
                 />
-                <div>
-                </div>
+               
             </div>
             <div className='flex justify-between items-center'>
                 <Image
@@ -71,7 +72,7 @@ function second() {
                     width={60}
                     height={60}
                     cover
-                    onClick={()=> router.push('third')}
+                    onClick={() => router.push('third')}
                     className='z-0 mb-60 mr-10 bg-white p-5 rounded-full shadow-lg '
                 />
             </div>
