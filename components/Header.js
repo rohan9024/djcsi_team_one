@@ -12,6 +12,8 @@ function Header() {
   const context = useContext(AppContext)
   const [featureHover, setFeatureHover] = useState(false)
   const router = useRouter()
+
+  
   return (
     <div className='flex p-10 w-full justify-between'>
 
